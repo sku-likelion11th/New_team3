@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'GangwonState';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.gangwon-font {
+    font-family: 'GangwonState', sans-serif;
+}
+.display-container{
+    max-width: 1200px;   
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+/* navbar section */
+.navbar {
+    background-color: #033075;
+    padding: 8px 12px;
+}
+.navbar_logo img {
+    width: 130px;
+    height: 25px;
+    margin-left: 20px;
+}
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar_menu li {
+    padding: 8px 12px;
+}
+.navbar a {
+    color: white;
+}
+.navbar_menu li:hover {
+    background-color: #f0f4f5;
+    border-radius: 4px;
+}
+.navbar_menu li:hover > a {
+    color: #033075;
+}
+.navbar_login {
+    list-style: none;
+    color: #f0f4f5;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 12px;
+}
+.logoutBtn {
+    margin-right: 15px;
+}
+.navbar_login li:hover {
+    background-color: #f0f4f5;
+    border-radius: 4px;
+    padding: 6px 4px;
+}
+.navbar_login li:hover > a {
+    color: #033075;
+}
+.navbar_login i{
+    padding-left: 5px;
+}
+.navbar_toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 20px;
+    color: #d49466  ;
+}
+.navbar_toggleBtn:hover i:hover {
+    color: #f0f4f5;
+}
+
+/* header seciton */
+.header_section {
+    background-color: #e2edff;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .topheader {
+    font-size: 60px;
+    padding: 120px 0 0 100px;
+}
+.header .subheader {
+    font-size: 40px;
+    color: #033075;
+    padding: 0 0 0 100px;
+    margin-top: -45px;
+    margin-bottom: 70px;
+}
+.MP_img {
+    margin: 80px 100px 0 0;
+}
+.MP_img img {
+    width: 200px;
+    height: 200px;
+}
+
+/* content section */
+.content_section {
+    margin-top: 20px;
+}
+.inform_tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newinform_tool{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inform {
+    width: 720px;
+    font-size: 28px;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.newinform {
+    width: 720px;
+    font-size: 28px;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.mpbox {
+    width: 160px;
+    text-align: center;
+}
+
+.content_section p {
+    margin-top: 6px;
+}
+.content_section .line {
+    border: 1px solid black;
+    width: 720px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.content_section input {
+    width:250px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #f5f7fa;
+    border: 2px solid #9d9d9d;
+    font-size: 13px;
+    padding: 0 8px;
+}
+.correct {
+    margin-top: 10px;
+}
+.changeBtn input {
+    color: white;
+    padding-left: 5px;
+    background-color: #033075;
+    font-size: 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 36px;
+    margin: 10px 0;
+}
+.tab {
+    width: 1200px;
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 50px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+  }
+  .tabheader {
+    border-bottom: 1px solid black;
+    width: 1200px;
+  }
+  .tabmargin {
+    display: flex;
+    width: 1000px;
+    margin-left: 100px;
+    font-size: 18px;
+  }
+  .tabheader_header {
+    margin-right: 310px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-right: 15px;
+    transition: 0.3s;
+    font-size: 26px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: #0054f6;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: #0054f6;
+    border-bottom: 3px solid #0054f6;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none; 
+    padding: 6px 12px;
+    border: none;
+    width: 1200px;
+    margin-left: 148px;
+  }
+  .tabcontent a {
+    color: #9d9d9d;
+  }
+  .tablist .inheader{
+    color: black;
+    width:200px;
+    padding:0 5px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .tablist {
+    border: 1px solid #9d9d9d;
+    background-color: white;
+    border-radius: 5px;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.tablist:hover {
+    background-color: #f6fbfe;
+    border: 2px solid #006ae2;
+}
+  .tabcontent p {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .tabcontent .incontent {
+    margin-left: 150px;
+    width:300px;
+    padding:0 5px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+
+
+
+  @media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar_logo {
+        margin: 0;
+    }
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_login {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar_toggleBtn{
+        display: block;
+    }
+    .navbar_menu.active, .navbar_login.active {
+        display: flex;
+    }
+}
