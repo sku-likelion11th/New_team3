@@ -167,6 +167,10 @@ a {
     height: 36px;
     margin: 10px 0;
 }
+.top_section {
+    display: flex;
+    justify-content: center;
+}
 .tab {
     width: 1200px;
     height: 80px;

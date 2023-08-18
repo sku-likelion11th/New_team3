@@ -131,10 +131,8 @@ a {
     width:150px;
     height:50px;
     border-radius:5px;
-    position: relative;
 }
 .second .category .category_button{
-    position:absolute;
     margin-left:20px;
     margin-top:10px;
     font-size:20px;
@@ -167,24 +165,20 @@ a {
     color:#717171;
     margin-left: 8px;
 }
-.third .third_text .benefit{
-    background-color:#033075;
-    width:150px;
-    height:50px;
-    border-radius:5px;
-    position: relative;
+.third_text .benefit_button{
+    width: 150px;
+    height: 50px;
+    background-color: #033075;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
-.benefit:hover {
-    background-color: white;
-    border: 1px solid #033075;
-    color: #033075;
+.third_text .benefit{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
 }
-.third .third_text .benefit .benefit_button{
-    position:absolute;
-    margin-left: 20px;
-    margin-top:10px;
-    font-size:20px;
-}
+
 
 /* main > fourth*/
 .fourth{
@@ -211,19 +205,20 @@ a {
     color:#717171;
 }
 
-.fourth .education{
-    background-color:#033075;
-    width:150px;
-    height:50px;
-    border-radius:5px;
-    position: relative;
+.fourth_text .education_button{
+    width: 150px;
+    height: 50px;
+    background-color: #033075;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
-.fourth .education .education_button{
-    position:absolute;
-    margin-left:40px;
-    margin-top:10px;
-    font-size:20px;
+.fourth_text .education{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
 }
+
 /* main > fifth */
 .fifth{
     display:flex;
@@ -246,19 +241,18 @@ a {
     margin-left: 8px;
     color:#717171;
 }
-.fifth_text .professor{
-    background-color:#033075;
-    width:150px;
-    height:50px;
-    border-radius:5px;
-    position: relative;    
+.fifth_text .professor_button {
+    width: 150px;
+    height: 50px;
+    background-color: #033075;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
-.fifth_text .professor_button{
-    position:absolute;
-    margin-left:40px;
-    margin-top:10px;
-    font-size:20px;
-    padding-left: 7px;
+.professor_button .professor {
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 576px) {
