@@ -145,16 +145,13 @@ input::placeholder {
 .searchBtn i {
     color: #9d9d9d;
 }
-.header_img {
+.header_img img {
+    margin-left: 910px;
+    width: 220px;
     height: 220px;
     margin-top: -150px;
-    display: flex;
-    justify-content: end;
 }
-.header_img img {
-    width: 180px;
-    height: 180px;
-}
+
 
 /* category section */
 .category{
