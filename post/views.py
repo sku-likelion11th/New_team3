@@ -82,7 +82,7 @@ class PostUpdateViewHtml(LoginRequiredMixin, generic.UpdateView):
     model = Post
     template_name = 'post/Consult_Write.html'
     fields = ('title', 'content', 'categories')
-    login_url = '/login/'
+    login_url = '/'
 
     def form_valid(self, form):
         if form.instance.author != self.request.user:
@@ -97,10 +97,6 @@ class PostUpdateViewHtml(LoginRequiredMixin, generic.UpdateView):
             self.object.categories.add(category)
             
         return response
-
-    def handle_no_permission(self):
-        messages.warning(self.request, "로그인이 필요한 서비스입니다.")
-        return super().handle_no_permission()
     
     def get_success_url(self):
         return reverse_lazy('post_list')
