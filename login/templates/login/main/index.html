@@ -14,7 +14,7 @@
 <body class="gangwon-font">
     <div class="display-container">
         <!-- nav section -->
-        <nav class="navbar fixed-top">
+        <nav class="navbar fixed-top d-flex justify-content-between align-items-center">
             <div class="navbar_logo">
                 <a href="{% url 'main' %}"><img src="{% static 'img/logo.png'%}" alt="브랜드로고"></a>
             </div>
@@ -23,14 +23,20 @@
                 <li><a href="{% url 'service' %}">맞춤혜택</a></li>
                 <li><a href="{% url 'post_list' %}">맞춤상담</a></li>
             </ul>
+            <!--변경사항-->
             <ul class="navbar_login">
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'logout' %}">로그아웃<i class="fa-regular fa-user"></i></a></li>
+                <div class="logoutBtn">
+                    <li><a href="{% url 'logout' %}">로그아웃</a></li>
+                </div>
+                <div class="mypageBtn">
                     <li><a href="{% url 'mypage' %}">마이페이지<i class="fa-regular fa-user"></i></a></li>
+                </div>
                 {% else %}
                     <li><a href="{% url 'login' %}">로그인<i class="fa-regular fa-user"></i></a></li>
                 {% endif %}
             </ul>
+            <!--변경사항-->
             <a href="#" class="navbar_toggleBtn"><i class="fa-solid fa-bars"></i></a>
         </nav>
         <!-- main section-->

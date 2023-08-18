@@ -22,14 +22,20 @@
                 <li><a href="{% url 'service' %}">맞춤혜택</a></li>
                 <li><a href="{% url 'post_list' %}">맞춤상담</a></li>
             </ul>
+            <!--변경사항-->
             <ul class="navbar_login">
                 {% if user.is_authenticated %}
-                    <li class="logout mx-2"><a href="{% url 'logout' %}">로그아웃<i class="fa-regular fa-user"></i></a></li>
-                    <li class="nav_mypage"><a href="{% url 'mypage' %}">마이페이지</a></li>
+                <div class="logoutBtn">
+                    <li><a href="{% url 'logout' %}">로그아웃</a></li>
+                </div>
+                <div class="mypageBtn">
+                    <li><a href="{% url 'mypage' %}">마이페이지<i class="fa-regular fa-user"></i></a></li>
+                </div>
                 {% else %}
-                    <li class="nav_login"><a href="{% url 'login' %}">로그인<i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="{% url 'login' %}">로그인<i class="fa-regular fa-user"></i></a></li>
                 {% endif %}
             </ul>
+            <!--변경사항-->
             <a href="#" class="navbar_toggleBtn"><i class="fa-solid fa-bars"></i></a>
         </nav>
         <!-- content section -->
