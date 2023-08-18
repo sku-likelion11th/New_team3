@@ -17,8 +17,6 @@ def api_education_search(request):
         params ={'serviceKey' : client_educationKey, 'pageNo' : pageNo, 'numOfRows' : numOfRows }
         response = requests.get(url, params=params)
         rescode = response.status_code
-        with open('finall/video.json') as video_json:
-            video_info = json.load(video_json)[0]
         if rescode == 200:
             search = request.GET.get('search', '')
             tag = request.GET.get('tag', '')
@@ -29,7 +27,6 @@ def api_education_search(request):
                 item_data = {}
                 for child in data:
                     item_data[child.tag] = child.text
-                item_data['url'] = video_info.get(item_data.get('idNo'))
                 datas.append(item_data)
             if search or tag:
                 filtered_datas = []
@@ -58,6 +55,6 @@ def api_education_search(request):
 
             custom_range = range(leftIndex, rightIndex + 1)
 
-        return render(request, 'education/Education.html', {'datas': datas, 'paginator': paginator, 'curPage': curPage, 'range': custom_range, 'page':page, 'search': search, 'tag': tag, 'video_info':video_info})
+        return render(request, 'education/Education.html', {'datas': datas, 'paginator': paginator, 'curPage': curPage, 'range': custom_range, 'page':page, 'search': search, 'tag': tag})
     else:
         return render(request, 'education/Education.html')

@@ -224,9 +224,6 @@ input::placeholder {
     .header_section{
         display: none;
     }
-    .headerpart{
-        justify-content: center;
-    }
     /* tool-part */
     .login_tool{
         display: grid;

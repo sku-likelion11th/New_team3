@@ -306,7 +306,6 @@ a {
     /* main > second */
     .second .second_text{
         margin-left:20px;
-        margin-top:30px;
     }
     .second .second_text .second_main1{
         font-size:20px;
@@ -331,8 +330,6 @@ a {
 
     .second img{
         width:200px;
-        margin:auto;
-        padding-right:50px;
     }
 
     /* main > third */
@@ -350,14 +347,9 @@ a {
     .third .third_text .third_sub{
         font-size:12px;
     }
-    .third_text .benefit_button{
-        height:40px;
-    }
     .third .third_text .benefit{
         width:100px;
         height:30px;
-        font-size:18px;
-        padding-top:7px;
     }
     .third .third_text .benefit .benefit_button{
         font-size: 14px;
@@ -366,9 +358,6 @@ a {
     }
 
     /* main > fourth */
-    .fourth{
-        height:200px;
-    }
     .fourth img{
         margin-left:20px;
         width:180px;
@@ -386,18 +375,11 @@ a {
     .fourth .education{
         width:100px;
         height:30px;
-        padding-top:7px;
-        text-align: center;
     }
     .fourth .education .education_button{
         font-size: 14px;
         margin-left:25px;
         margin-top:5px;
-    }
-    .fourth_text .education_button{
-
-        height:40px;
-        width:150px;
     }
     /* main > fifth*/
     .fifth img{
@@ -414,15 +396,9 @@ a {
     .fifth .fifth_sub{
         font-size:12px;
     }
-    .fifth_text .professor_button{
-        height:40px;
-    }
     .fifth .fifth_text .professor{
-        width: 100px;
-        height: 30px;
-        font-size: 18px;
-        padding-top: 7px;
-        text-align: center;
+        width:100px;
+        height:30px;
     }
     .fifth .fifth_text .professor .professor_button{
         font-size: 14px;

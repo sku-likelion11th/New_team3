@@ -82,7 +82,6 @@ a {
 /*header*/
 .header_section {
     background-color: #e2edff   ;
-
     margin-top: 56px;
 }
 .header p {
@@ -116,19 +115,13 @@ a {
 input::placeholder {
     color: #9d9d9d;
 }
-.search_section {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-top: -30px;
-}
-.search_bar {
-    display: flex;
-    position: absolute;
-    margin-right: 75px;
-}
 
+/* search section */
+.searchheader {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 .search_bar input {
     width:250px;
     height: 45px;
@@ -138,18 +131,11 @@ input::placeholder {
     padding-left: 10px;
     font-size: 12px;
 }
-.searchBtn {
-    display: flex;
-    position: absolute;
-    margin-left: 220px;
-}
 .searchBtn button:hover {
     border: 2px solid black;
 }
 .searchBtn button {
     background-color: #fcfcfc;
-}
-.searchBtn button {
     border: 2px solid #9d9d9d;
     width: 45px;
     height: 45px;
@@ -160,19 +146,19 @@ input::placeholder {
     color: #9d9d9d;
     padding: px;
 }
-.header_img {
-    margin-left: 980px;
+.header_img img {
+    margin-left: 910px;
     width: 220px;
     height: 220px;
-    margin-top: -50px;
-
+    margin-top: -150px;
 }
+
 
 /*카테고리*/
 .category{
     display:flex;
 }
-.category .optional #ed_target{
+.optional .ed_target{
     width:120px;
     height:47px;
     font-size:16px;
@@ -182,10 +168,10 @@ input::placeholder {
     padding: 0 8px;
     border-radius: 5px;
 }
-#ed_target:hover {
+.ed_target:hover {
     border: 2px solid black;
 }
-.category .optional #ed_field{
+.optional .ed_field{
     width:120px;
     height:47px;
     font-size:16px;
@@ -195,10 +181,9 @@ input::placeholder {
     padding: 0 8px;
     border-radius: 5px;
 }
-#ed_field:hover {
+.ed_field:hover {
     border: 2px solid black;
 }
-
 
 /*페이지네이션*/
 .page_section{
@@ -218,7 +203,7 @@ input::placeholder {
     border:2px solid #033075;
     border-radius: 10px;
     width: 350px;
-    height: 260px;
+    height: 280px;
     margin: 10px 10px;
 }
 .box_content {
@@ -242,6 +227,8 @@ input::placeholder {
 .page_box .ed_name{
     color:#000000;
     font-size: 30px;
+    line-height: 90%;
+    margin: 5px 20px;
 }
 .page_box:hover{
     background: #f6fbfe;
@@ -251,6 +238,16 @@ input::placeholder {
     color: #9d9d9d;
     margin-left: 10px;
 }
+.ed_content {
+    width: 306px;
+    max-height: 72px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+/* pagination */
 .pagination a {
     margin-top: 50px;
     color: black;
