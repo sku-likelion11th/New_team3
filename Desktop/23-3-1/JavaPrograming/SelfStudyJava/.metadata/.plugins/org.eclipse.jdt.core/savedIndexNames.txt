@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\ckdwn\Desktop\23-3-1\JavaPrograming\SelfStudyJava\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1879974531.index
+118034965.index
+3999971104.index
+2663481984.index
+684469180.index
