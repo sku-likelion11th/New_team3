@@ -1,0 +1,46 @@
+package Practice;
+
+public class Triangle extends Shape {
+	//삼각형 계산
+	public float getArea() {
+	. . .
+	}
+	}
+	public class ShapeTest {
+	public static void main(String args[]){
+	//Rectangle 객체 r 생성
+	//Triangle 객체 t 생성
+	//Shape의 setWidth() 메소드 사용하여 r 폭 입력
+	//Shape의 setHeight() 메소드 사용하여 r 높이 입력
+	System.out.println("사각형 넓이 : " + r.getArea() );
+	//Shape의 setWidth() 메소드 사용하여 t 폭 입력
+	//Shape의 setHeight() 메소드 사용하여 t 높이 입력
+	System.out.println("삼각형 넓이 : " + t.getArea() );
+	}
+	}
+	Triangle
+	Shape
+	Rectangle
+	getArea( )
+	getArea( ) getArea( )
+	5
+	public class Triangle extends Shape { //삼각형 계산
+	public float getArea() {
+	//float triarea;
+	//triarea = (height * width) / 2;
+	//return triarea;
+	return (height * width)/2;
+	}
+	}
+	public class ShapeTest {
+	public static void main(String args[]){
+	Rectangle r = new Rectangle();
+	Triangle t = new Triangle();
+	r.setWidth(5);
+	r.setHeight(10);
+	System.out.println("사각형 넓이 : " + r.getArea());
+	t.setWidth(5);
+	t.setHeight(10);
+	System.out.println("삼각형 넓이 : " + t.getArea());
+	}
+	}

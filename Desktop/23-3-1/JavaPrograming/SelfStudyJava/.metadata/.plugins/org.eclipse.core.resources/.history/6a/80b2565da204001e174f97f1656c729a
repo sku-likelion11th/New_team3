@@ -1,0 +1,19 @@
+package Practice;
+
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+        Rectangle myRect = new Rectangle(); // 객체 생성
+        myRect.width = 40;
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+
+class Rectangle {
+    int width;
+    int height;
+
+    int area() {
+        return width * height; // 사각형 면적 계산 메소드
+    }
+}
