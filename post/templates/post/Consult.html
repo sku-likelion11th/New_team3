@@ -24,8 +24,12 @@
             <!--변경사항-->
             <ul class="navbar_login">
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'logout' %}">로그아웃<i class="fa-regular fa-user"></i></a></li>
+                <div class="logoutBtn">
+                    <li><a href="{% url 'logout' %}">로그아웃</a></li>
+                </div>
+                <div class="mypageBtn">
                     <li><a href="{% url 'mypage' %}">마이페이지<i class="fa-regular fa-user"></i></a></li>
+                </div>
                 {% else %}
                     <li><a href="{% url 'login' %}">로그인<i class="fa-regular fa-user"></i></a></li>
                 {% endif %}
