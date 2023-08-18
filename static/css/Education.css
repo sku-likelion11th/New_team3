@@ -44,6 +44,7 @@ a {
 .navbar_menu li:hover > a {
     color: #033075;
 }
+
 .navbar_login {
     list-style: none;
     color: #f0f4f5;
