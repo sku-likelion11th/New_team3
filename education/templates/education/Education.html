@@ -118,15 +118,15 @@
             <div class="page_line1">
                 {% for data in datas %}
                 <div class="page_box">
-                    <a href="#">
+                    <a href="{{data.url}}">
                         <div class="box_video">
-                            <video src=""></video>
+                            <iframe width="300" height="130" src="{{data.url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="box_content">
-                            <p class="ed_name">교육명:{{data.edcSbjcNm}}</p> <!-- `${js, json파일로 데이터를 가져옴}` -->
-                            <p>교육 소개: {{data.edcSbjcIntrc}}</p>
+                            <p class="ed_name">교육명:{{data.edcSbjcNm}}</p>
+                            <p>교육 소개: {{data.edcSbjcIntrc}}</p>{{data.idNo}}
                         </div>
-                    </a>   
+                    </a>
                 </div>
                 {% endfor %}
             </div>
