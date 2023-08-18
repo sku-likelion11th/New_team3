@@ -179,7 +179,7 @@ class AnonymousRequiredMixin(AccessMixin):
             return HttpResponseRedirect(reverse_lazy("main"))  # 로그인한 사용자의 리디렉션 페이지 설정
         return super().dispatch(request, *args, **kwargs)
     
-class PasswordResetView(AnonymousRequiredMixin, View): 
+class PasswordResetView(AnonymousRequiredMixin, View):
     template_name = "login/Password/Password.html"
 
     def get(self, request):
@@ -188,7 +188,6 @@ class PasswordResetView(AnonymousRequiredMixin, View):
     def post(self, request):
         username = request.POST.get("username")
         email = request.POST.get("email")
-        old_password = request.POST.get("old_password")  # 기존 비밀번호
         new_password1 = request.POST.get("new_password1")
         new_password2 = request.POST.get("new_password2")
 
@@ -196,18 +195,15 @@ class PasswordResetView(AnonymousRequiredMixin, View):
             user = User.objects.get(username=username, email=email)
         except User.DoesNotExist:
             user = None
-            
+
         if user is not None:
-            if user.check_password(old_password):  # 기존 비밀번호가 일치하는지 확인
-                if new_password1 == new_password2:
-                    user.set_password(new_password1)
-                    user.save()
-                    messages.success(request, "비밀번호 변경이 완료되었습니다.")
-                    return HttpResponseRedirect(reverse_lazy("login"))
-                else:
-                    messages.error(request, "새 비밀번호가 일치하지 않습니다.")
+            if new_password1 == new_password2:
+                user.set_password(new_password1)
+                user.save()
+                messages.success(request, "비밀번호 변경이 완료되었습니다.")
+                return HttpResponseRedirect(reverse_lazy("login"))
             else:
-                messages.error(request, "현재 비밀번호가 일치하지 않습니다.")  # 기존 비밀번호 확인 메시지 추가
+                messages.error(request, "새 비밀번호가 일치하지 않습니다.")
         else:
             messages.error(request, "아이디 또는 이메일이 잘못되었습니다.")
 
